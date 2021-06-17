@@ -111,7 +111,7 @@ def extract():
     # III. store the results produced by traffic-fc to cache
     #
     try:
-        cache_operations.store_simple_data_to_cache_wrapper(cache, request_id, out,
+        cache_operations.store_simple_data_to_cache_wrapper(cache, request_id, out["traffic"],
                                                             "traffic_ratio")
     except redis.exceptions.ConnectionError as exc:
         logging.debug("Writing outputs to cache by traffic-fc feature collector failed.")      
