@@ -26,7 +26,7 @@ import time
 def get_route_info(rapi_key, coords_origin, coords_destination, departure_time):
     try:
         # prevent service abuse (minimum 1 sec between requests)
-        time.sleep(1)
+        # time.sleep(1)
         # initialize engine
         arouting_api = RoutingApi(rapi_key)            
         # fetches a driving route between two points
