@@ -89,7 +89,7 @@ def extract():
             #["id","trip","bookable_total","complete_total","offer_items"],
             #["id","duration","start_time", "end_time","num_interchanges","legs"]
             ["num_interchanges"],
-            ["start_time", "end_time","leg_stops","transportation_mode", "journey","duration","driver","vehicle","leg_track"]
+            ["start_time", "end_time","leg_stops","transportation_mode", "journey","duration","leg_track"]
             )
     except redis.exceptions.ConnectionError as exc:
         logging.debug("Reading from cache by traffic-fc feature collector failed.")
